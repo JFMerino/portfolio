@@ -1,0 +1,42 @@
+.section.inicio{
+    height: 100vh;
+    justify-content: center;
+    max-width: 1000px;
+    top: 0;
+}
+
+.inicio .saludo{
+    max-width: 60vw;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.inicio .saludo-inicio{
+    text-align: center;
+    font-size: 5em;
+    font-family: var(--resalto);
+    margin: auto;
+    font-weight: bold;
+    color: var(--text-3);
+}
+
+.inicio .sub-inicio{
+    text-align: center;
+    font-size: 3em;
+    font-family: var(--resalto);
+    margin: auto;
+}
+
+.inicio .photo-jose{
+    margin: auto;
+    max-width: 40vw;
+}
+
+.inicio .photo{
+    transform: scaleX(-1);
+    width: 20vw;
+    height: 20vw;
+    border-bottom: 4px solid whitesmoke;
+    border-radius: 50%;
+}
