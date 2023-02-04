@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    background-color: black;
+    background-color: transparent;
     left: 0;
     top: 0;
     border-radius: 5px;
@@ -31,6 +31,7 @@
   .nav-bar .menu {
     display: flex;
     line-height: 50px;
+    color: var(--text-2);
   }
   
   .nav-bar .menu .redes{
@@ -52,11 +53,11 @@
   
   .nav-bar .item-menu {
     text-decoration: none;
-    color: var(--color-4);
+    color: var(--text-2);
   }
   
   .nav-bar .item-redes {
-    color: var(--color-4);
+    color: var(--color-2);
     font-size: 2vw;
   }
   
@@ -90,7 +91,7 @@
   }
   
   .nav-toggle {
-    color: var(--color-primary);
+    color: var(--text-2);
     background: none;
     border: none;
     font-size: 30px;
@@ -121,7 +122,7 @@
     }
   
     .menu {
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.1);
       align-items: center;
       margin: 0;
       position: fixed;
