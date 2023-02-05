@@ -9,8 +9,9 @@
 
   <link rel="stylesheet" href="css/nav-bar.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/Inicio.css">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/medias.css">
+  <link rel="stylesheet" href="css/portfolio.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,200;1,400&display=swap"
@@ -31,31 +32,10 @@
           <i class="fas fa-bars"></i>
         </button>
         <ul class="menu">
-          <div class="items">
-            <li class="item"><a class="item-menu select" href="#about">about</a></li>
-            <li class="item"><a class="item-menu" href="#portfolio">portfolio</a></li>
-            <li class="item"><a class="item-menu" href="#contact">contact</a></li>
-          </div>
-          <div class="redes">
-            <li class="item">
-              <a href="https://www.linkedin.com/in/jfmerimo/" name="linkedin" class="item-redes linkedin"
-                target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </li>
-            <li class="item">
-              <a href="https://github.com/JFMerino" name="github" class="item-redes github" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </li>
-            <li class="item">
-              <a href="mailto:josericardofiguero@gmail.com" name="email" class="item-redes" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fa-regular fa-envelope"></i>
-              </a>
-            </li>
-          </div>
+            <li class="item"><a class="item-menu select" href="#home" data-ref="home">home</a></li>
+            <li class="item"><a class="item-menu" href="#about"  data-ref="about">about</a></li>
+            <li class="item"><a class="item-menu" href="#portfolio"  data-ref="portfolio">portfolio</a></li>
+            <li class="item"><a class="item-menu" href="#contact"  data-ref="contact">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -71,7 +51,8 @@
         </div>
       </section>
       <section class="section about" id="about">
-        <h1 class="section__title">About me</h1>
+        <div class="container-portfolio">
+          <h1 class="section__title">About me</h1>
         <div class="about-container">
           <div class="about-description">
             <h2 class="section__subtitle">Frontend Developer / Engineering Electronic.</h2>
@@ -116,12 +97,48 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
       <section class="section portfolio" id="portfolio">
+        <div class="container-portfolio">
+          <h2 class="section__title">Portfolio</h2>
+          <h3 class="section__subtitle">Here you can see the projects I have worked on.</h3>
+          <div class="portfolio__grid">
+            <div class="portfolio__item">
+              <picture>
+                <source type="image/jpeg" srcset="projects\venezla.jpeg" />
+                <img class="portfolio__img" alt="portfolio item" />
+              </picture>
+              <div class="portfolio__description">
+                <h3 class="portfolio__description--title">Venezla</h3>
+                <p class="portfolio__description--text">
+                  Web Application: HTML5, CSS3, JavaScript.
+                </p>
+                <div class="buttons__container">
+                  <a
+                    class="button"
+                    href="https://jfmerino.github.io/Venezla-web/#somos-venezla"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-globe-americas"></i> Website
+                  </a>
+                  <a
+                    class="button"
+                    href="https://github.com/JFMerino/Venezla-web"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-github"></i> Repository
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> 
       </section>
-      <hr>
-      <section class="section contacto" id="contact"></section>
-      <hr>
+      <section class="section contacto" id="contact">
+
+      </section>
     </main>
   </div>
 </body>

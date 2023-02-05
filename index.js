@@ -1,56 +1,50 @@
 const navbar = document.querySelector(".nav-bar");
 const header = document.querySelector(".header");
-const homebg = document.querySelector(".home__background");
-const menu = document.querySelector(".nav-toggle");
-const links = document.querySelector(".menu");
 const sections = document.querySelectorAll("section");
-const config = {
-  rootMargin: "0px",
-  threshold: [0.6, 0.9],
-};
-
-function handleLlinks() {
-  if (window.innerWidth <= 991) {
-    links.classList.toggle("menu_visible");
-  }
-}
-
-menu.addEventListener("click", handleLlinks);
-links.addEventListener("click", handleLlinks);
+const menu = document.querySelector(".menu");
+const openMenuBtn = document.querySelector(".nav-toggle");
+const closeMenuBtn = document.querySelector(".nav-toggle");
 
 window.addEventListener("scroll", function () {
   window.scrollY > 100 && (header.style.background = `rgba(0,0,0,0.9)`);
   window.scrollY < 100 && (header.style.background = `transparent`);
 });
 
-let observer = new IntersectionObserver(function (entries, self) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      intersectionHandler(entry);
-    }
-  });
-}, config);
-
-sections.forEach((section) => {
-  observer.observe(section);
-});
-
-function intersectionHandler(entry) {
-  const id = entry.target.id;
-  const currentlyActive = document.querySelector(".navbar__links  .active");
-  const shouldBeActive = document.querySelector(
-    ".navbar__links [data-ref=" + id + "]"
-  );
-
-  if (currentlyActive) {
-    currentlyActive.classList.remove("active");
-  }
-  if (shouldBeActive) {
-    shouldBeActive.classList.add("active");
-  }
+function toggleMenu() {
+  menu.classList.toggle("menu_visible");
 }
 
+openMenuBtn.addEventListener("click", toggleMenu);
+closeMenuBtn.addEventListener("click", toggleMenu);
 
+const menuLinks = document.querySelectorAll('.menu .item-menu[href^="#"]');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      const id = entry.target.getAttribute("id");
+      const menuLink = document.querySelector(`.menu .item-menu[href="#${id}"]`);
+
+      if (entry.isIntersecting) {
+        document.querySelector(".menu .item-menu.select").classList.remove("select");
+        menuLink.classList.add("select");
+      }
+    });
+  },
+  { rootMargin: "-30% 0px -70% 0px" }
+);
+
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener("click", function () {
+    menu.classList.remove("menu_visible");
+  });
+
+  const hash = menuLink.getAttribute("href");
+  const target = document.querySelector(hash);
+  if (target) {
+    observer.observe(target);
+  }
+});
 
 ScrollReveal().reveal(".nav-bar", { delay: 250 });
 ScrollReveal().reveal(".phto-jose", { delay: 350 });
@@ -64,7 +58,5 @@ ScrollReveal().reveal(".about__summary", { delay: 450 });
 ScrollReveal().reveal(".button--cta", { delay: 550 });
 ScrollReveal().reveal(".skill__title", { delay: 450 });
 ScrollReveal().reveal(".skill__item", { delay: 450 });
-ScrollReveal().reveal(".services__item", { delay: 450 });
 ScrollReveal().reveal(".portfolio__item", { delay: 450 });
-ScrollReveal().reveal(".contact__item", { delay: 450 });
 ScrollReveal().reveal(".footer", { delay: 450 });
