@@ -104,10 +104,11 @@
   }
 
   .about__skills {
-    width: 50%;
+    width: 45%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    margin: 0 auto;
   }
 
   .skill__title {
@@ -115,7 +116,6 @@
     color: var(--text-4);
     text-align: start;
     margin-bottom: 10px;
-    margin: 0;
     font-family: var(--titulos);
   }
 
