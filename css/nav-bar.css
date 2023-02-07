@@ -34,18 +34,6 @@
     color: var(--text-2);
   }
   
-  .nav-bar .menu .redes{
-    display: flex;
-    color: var(--color-logo-text);
-  }
-  
-  .nav-bar .menu .items{
-    display: flex;
-    padding: 0 20vh;
-    color: var(--color-logo-text);
-    
-  }
-  
   .nav-bar .item {
     list-style: none;
     padding: 10px;
@@ -56,10 +44,6 @@
     color: var(--text-2);
   }
   
-  .nav-bar .item-redes {
-    color: var(--color-2);
-    font-size: 2vw;
-  }
   
   .menu .item-menu{
     position: relative;
@@ -109,7 +93,7 @@
   
     .header {
       height: 60px;
-      min-width: 480px;
+      min-width: 400px;
     }
   
     .nav-toggle {
@@ -117,8 +101,8 @@
     }
   
     .nombre {
-      font-size: 15px;
-      padding: 0 20px;
+      font-size: 2.8vh;
+      padding: 0 1.5vh;
     }
   
     .menu {
@@ -144,18 +128,10 @@
       
     }
   
-    .nav-bar .item-redes {
-      font-size: 5vw;
-    }
-  
     .nav-bar .menu .items{
       flex-direction: column;
       padding: 0 2.5vh;
       font-size: 1.2em;
-    }
-  
-    .nav-bar .menu .redes{
-      margin: 0 auto;
     }
   
     .nav-toggle {

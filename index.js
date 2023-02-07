@@ -47,8 +47,7 @@ menuLinks.forEach((menuLink) => {
 });
 
 ScrollReveal().reveal(".nav-bar", { delay: 250 });
-ScrollReveal().reveal(".phto-jose", { delay: 350 });
-ScrollReveal().reveal(".home__title--primary", { delay: 350 });
+ScrollReveal().reveal(".photo-jose", { delay: 350 });
 ScrollReveal().reveal(".saludo-inicio", { delay: 450 });
 ScrollReveal().reveal(".sub-inicio", { delay: 550 });
 ScrollReveal().reveal(".section__title", { delay: 250 });

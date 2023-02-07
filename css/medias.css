@@ -1,4 +1,4 @@
-@media (min-width: 920px) {
+@media (min-width: 950px) {
   .section__title {
     font-size: 2.8em;
     margin-bottom: 30px;
@@ -80,12 +80,13 @@
   .about-container {
     flex-direction: row;
     flex-wrap: nowrap;
-    max-width: 100%;
-
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .about-description {
-    width: 50%;
+    width: 45%;
   }
 
   .section__subtitle {
@@ -108,7 +109,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .skill__title {
@@ -135,7 +136,7 @@
     max-height: 100px;
     max-width: 100px;
     text-align: center;
-}
+  }
 
   .skill__name {
     font-size: 25px;
@@ -144,7 +145,7 @@
   .section.portfolio {
     background-color: var(--background-2);
     display: block;
-    padding-left: 50px;
+    padding-left: 70px;
     padding-top: 10px;
     height: 100vh;
   }
@@ -161,6 +162,7 @@
   .portfolio__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 20px;
   }
 
@@ -211,5 +213,67 @@
 
   .button:hover {
     background-color: var(--text-3);
+  }
+
+  .backgorund-contact {
+    background-color: var(--background-2);
+    height: 110vh;
+    padding-top: 50px;
+    background-color: var(--background-2);
+    padding-left: 70px;
+  }
+
+  .contact {
+    font-size: 20px;
+    padding: 70px;
+
+    max-width: 980px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    height: 75vh;
+  }
+
+  .social-list {
+    justify-content: flex-start;
+  }
+
+  .social-list i {
+    font-size: 4vw;
+    padding-right: 5vw;
+  }
+
+  .contact-title {
+    grid-area: title;
+  }
+
+  .contact-details {
+    grid-area: details;
+  }
+
+  .contact-form {
+    grid-area: form;
+  }
+
+  .social {
+    padding-top: 75px;
+  }
+
+  .social {
+    grid-area: social;
+  }
+
+  .contact {
+    display: grid;
+    grid:
+      "title   form" auto "details form" 1fr "social  form" auto / 1fr 1fr;
+    align-items: start;
+  }
+
+  .footer{
+    background-color: rgb(241, 241, 241);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
   }
 }
