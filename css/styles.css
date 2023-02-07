@@ -188,6 +188,7 @@
   padding-left: 30px;
   padding-top: 10px;
   height: auto;
+  padding-bottom: 10px;
 }
 
 .container-section {
@@ -283,6 +284,8 @@
 
 .backgorund-contact {
   background-color: var(--background-2);
+  margin: 0;
+  padding-top: 10px;
 }
 
 .contact {
@@ -291,7 +294,7 @@
 
   display: grid;
   gap: 25px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .contact p,
