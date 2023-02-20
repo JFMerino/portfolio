@@ -233,6 +233,33 @@
     height: 75vh;
   }
 
+.contact-details,
+.contact-form {
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  gap: 10px;
+}
+
+.contact-details{
+  padding-top: 0;
+}
+
+.social {
+  padding-bottom: 0;
+}
+
+  .contact-details-group{
+    display: grid;
+    gap: 3px;
+    justify-content: start;
+    padding: 5px 0;
+  }
+
+  .contact-form-submit {
+    width: 100%;
+  }
+
   .social-list {
     justify-content: flex-start;
   }
@@ -255,7 +282,7 @@
   }
 
   .social {
-    padding-top: 75px;
+    padding-top: 32px;
   }
 
   .social {

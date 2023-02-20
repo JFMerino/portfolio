@@ -334,6 +334,11 @@
   text-align: center;
 }
 
+.contact-form input{
+  border: 1px solid var(--background-1);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .contact-details-group{
   display: flex;
   gap: 10px;
