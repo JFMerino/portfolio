@@ -334,7 +334,8 @@
   text-align: center;
 }
 
-.contact-form input{
+.contact-form input,
+.contact-form textarea{
   border: 1px solid var(--background-1);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
