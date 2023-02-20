@@ -10,6 +10,8 @@
     --parrafos: 'PT Sans', sans-serif;
     --resalto: 'Merienda', cursive;
     --blueReact: #61DBFB;
+    --sassRosa: #c69;
+    --nodeVerde: #3c873a;
   }
   
   *, *::after, *::before{
