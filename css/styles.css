@@ -103,7 +103,7 @@
   text-align: justify;
   font-size: 15px;
   font-family: var(--parrafos);
-  margin: 0;
+  margin: 0 auto;
   color: var(--text-1);
   padding: 5px 0;
 }
@@ -304,7 +304,7 @@
   display: grid;
   gap: 25px;
   margin: 0 auto;
-  max-width: 80vw;
+  max-width: 95vw;
   width: 100%;
 }
 
@@ -327,17 +327,11 @@
 .contact-form {
   display: grid;
   gap: 10px;
-  font-size: 20px;
+  font-size: 0.9em;
   font-family: var(--titulos);
   width: 80%;
   margin: auto;
   text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea{
-  border: 1px solid var(--background-1);
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .contact-details-group{
@@ -361,6 +355,9 @@
   border: none;
   height: 30px;
   padding: 5px 10px;
+  border: 1px solid var(--background-1);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 95%;
 }
 
 .contact-form textarea {
