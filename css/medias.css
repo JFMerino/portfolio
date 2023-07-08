@@ -53,8 +53,8 @@
 
   .home .photo {
     transform: scaleX(-1);
-    width: 20vw;
     height: 20vw;
+    width: auto;
     border-bottom: 4px solid whitesmoke;
     border-radius: 50%;
   }
